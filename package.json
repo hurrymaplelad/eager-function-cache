@@ -1,0 +1,34 @@
+{
+  "name": "eager-function-cache",
+  "version": "0.0.0",
+  "description": "Call a slow function on a fixed schedule, returning the latest result",
+  "author": "Adam Hull <adam@hmlad.com>",
+  "keywords": [
+    "async",
+    "cache",
+    "function"
+  ],
+  "main": "lib/eager_function_cache",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hurrymaplelad/eager-function-cache.git"
+  },
+  "homepage": "https://github.com/hurrymaplelad/eager-function-cache",
+  "bugs": "https://github.com/hurrymaplelad/eager-function-cache/issues",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "coffee-script": ">=1.7.x",
+    "mocha": "~1.x.x",
+    "sinon": "~1.10.3",
+    "chai": "~1.9.2",
+    "sinon-chai": "~2.6.0",
+    "moment": "~2.8.3"
+  },
+  "scripts": {
+    "test": "mocha",
+    "prepublish": "npm run compile",
+    "pretest": "npm run compile",
+    "compile": "coffee --compile --output lib/ src/"
+  }
+}
