@@ -1,6 +1,6 @@
 {
   "name": "eager-function-cache",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Call a slow function on a fixed schedule, returning the latest result",
   "author": "Adam Hull <adam@hmlad.com>",
   "keywords": [
